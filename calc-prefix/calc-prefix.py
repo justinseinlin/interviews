@@ -5,8 +5,6 @@
 # calculate the value of the expression.
 ######################################################################
 
-from collections import deque
-
 def add(a, b):
     return a + b
 def subtract(a, b):
@@ -23,6 +21,8 @@ OPS = {
     '/' : divide
 }
 def calc(expr):
+    from collections import deque
+
     def calcHelper(expr):
         if not expr:
             return None
