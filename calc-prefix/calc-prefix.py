@@ -5,20 +5,11 @@
 # calculate the value of the expression.
 ######################################################################
 
-def add(a, b):
-    return a + b
-def subtract(a, b):
-    return a - b
-def multiply(a, b):
-    return a * b
-def divide(a, b):
-    return a / b
-
 OPS = {
-    '+' : add,
-    '-' : subtract,
-    '*' : multiply,
-    '/' : divide
+        '+' : lambda a,b: a + b,
+        '-' : lambda a,b: a - b,
+        '*' : lambda a,b: a * b,
+        '/' : lambda a,b: a / b
 }
 def calc(expr):
     from collections import deque
