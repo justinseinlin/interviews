@@ -1,5 +1,10 @@
 #! /usr/bin/python
 
+############################################################
+# Given a sorted array, find the first and last occurrances
+# of a given number in the array.
+############################################################
+
 def binarySearch(arr, num, begin, end):
     if begin == end:
         return None
