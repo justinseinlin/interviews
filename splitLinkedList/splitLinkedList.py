@@ -1,5 +1,11 @@
 #! /usr/bin/python
 
+########################################################
+# Given a linked list, split it into two linked lists:
+# one containing the fibonacci numbers and the other
+# containing the non-fabonacci numbers.
+########################################################
+
 class Node:
     def __init__(self, val):
         self.val = val
@@ -60,14 +66,6 @@ def splitLinkedList(head):
         prevNFib.next = None
 
     return (headFib, headNFib)
-
-def printLinkedList(head):
-    curr = head
-    while curr:
-        print curr.val
-        curr = curr.next
-    print
-
 
 if __name__ == "__main__":
     DATA = [
