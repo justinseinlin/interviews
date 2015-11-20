@@ -1,5 +1,10 @@
 #! /usr/bin/python
 
+###############################################
+# Given an unsorted array, remove duplicates
+# and report the number of elements left.
+###############################################
+
 def countAfterDupRemoval(arr):
     seen = set()
     for elem in arr:
